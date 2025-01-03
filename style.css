@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Monsieur+La+Doulaise&family=Playwrite+AU+SA:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +10,7 @@
 .container{
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(135deg, #153677, #4e085f);
+    background: linear-gradient(135deg, #121417, #2b2f36);
     padding: 10px;
 }
 
@@ -22,15 +24,14 @@
 }
 
 .todo-app h2{
-    color: #002765;
+    color: #1d1d1d;
     display: flex;
+    justify-content: center;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 2rem ;
+    font-style: italic oblique;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.todo-app h2 img{
-    width: 30px;
-    margin-left: 10px;
 }
 
 .row{
@@ -54,23 +55,25 @@ input{
 button{
     border: none;
     outline: none;
-    padding: 16px 50px;
-    background: #ff5945;
+    padding: 15px 20px;
+    background: #1d1d1d;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     border-radius: 40px;
 }
 
 ul, li {
     list-style: none;
-    font-size: 20px;
+    font-size: 17.5px;
     padding-left: 20px; 
     margin-left: 0px;
     user-select: none;
     cursor: pointer;
     position: relative;
     line-height: 1.8; 
+    
+    
 }
 
 li::before {
@@ -82,7 +85,7 @@ li::before {
     background-image: url(images/unchecked.png);
     background-size: cover;
     background-position: center;
-    top: 5px; 
+    top: 4px; 
     left: -20px; 
 }
 
@@ -92,13 +95,12 @@ li.checked{
 }
 
 li.checked::before{
-    background-image: url(images/checked.png);
+    background-image: url(images/new-cheked.png);
 }
 
 ul li span{
     position: absolute;
-    right: 0;
-    top: 5px;
+    right: 10px;
     width: 40px;
     height: 40px;
     font-size: 22px;
@@ -106,6 +108,7 @@ ul li span{
     line-height: 40px;
     text-align: center;
     border-radius: 50%;
+    top:0px;
 }
 
 ul li span:hover{
